@@ -144,6 +144,7 @@ export default class TransactionScreen extends React.Component {
               placeholder="book id"
               style={styles.inputBox}
               value={this.state.scannedBookId}
+              onChangeText={(text) => { this.setState({ scannedBookId: text }) }}
             />
             <TouchableOpacity
               style={styles.scanButton}
@@ -157,6 +158,7 @@ export default class TransactionScreen extends React.Component {
               placeholder="student id"
               style={styles.inputBox}
               value={this.state.scannedStudentId}
+              onChangeText={(text) => { this.setState({ scannedStudentId: text }) }}
             />
             <TouchableOpacity
               style={styles.scanButton}
